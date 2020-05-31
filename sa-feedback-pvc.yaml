@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+Namespace: sentiment
+metadata:
+  name: sqlite-pvc
+  labels:
+    app: sa-feedback
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
